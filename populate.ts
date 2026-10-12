@@ -10,6 +10,7 @@ interface BlogPost {
   link: string;
   createdAt: string;
   featured: boolean;
+  readTime: string;
 }
 
 // Read the blogs json file
@@ -51,8 +52,41 @@ fs.writeFileSync(path.join("public", "sitemap.xml"), sitemap, {
   encoding: "utf-8",
 });
 
-// generate rss
+// populate a feed.xml file
+let feed = `
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzCodes Blog</title>
+    <link>${SITE_URL}</link>
+    <description>Posts about web development, backend engineering, and tech education.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Oct 2026 09:00:00 GMT</lastBuildDate>
+    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />
+`;
 
+blogsJson.forEach((blog) => {
+  feed += `
+    <item>
+      <title>${blog.title}</title>
+      <link>${SITE_URL}${blog.link}</link>
+      <guid isPermaLink="true">${SITE_URL}${blog.link}</guid>
+      <pubDate>${blog.createdAt}</pubDate>
+      <description>${blog.description}</description>
+      ${blog.badges
+        .map((b) => `<category>${b}</category>`)
+        .toString()
+        .replace(",", "\n")}
+    </item>
+    `;
+});
+
+feed += `
+  </channel>
+</rss>`;
+
+fs.writeFileSync(path.join("public", "rss.xml"), feed, {
+  encoding: "utf-8",
+});
 // populate app/data/data.jsx so application can access it as part of the code
 
 const code = `
@@ -64,6 +98,7 @@ export interface BlogPost {
   link: string;
   createdAt: string;
   featured: boolean;
+  readTime: string;
 }
 
 const blogData: BlogPost[] = ${JSON.stringify(

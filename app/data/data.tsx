@@ -7,6 +7,7 @@ export interface BlogPost {
   link: string;
   createdAt: string;
   featured: boolean;
+  readTime: string;
 }
 
 const blogData: BlogPost[] = [
@@ -20,7 +21,8 @@ const blogData: BlogPost[] = [
     ],
     "link": "/posts/my-first-blog",
     "createdAt": "September, 26, 2026",
-    "featured": true
+    "featured": true,
+    "readTime": "10 Mins"
   },
   {
     "topicKey": "First time",
@@ -32,7 +34,8 @@ const blogData: BlogPost[] = [
     ],
     "link": "/posts/my-first-blogd",
     "createdAt": "September, 26, 2026",
-    "featured": false
+    "featured": false,
+    "readTime": "10 Mins"
   }
 ];
 

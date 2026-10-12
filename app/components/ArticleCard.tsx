@@ -27,7 +27,7 @@ export default function ArticleCard({ blog }: { blog: BlogPost }) {
         </div>
         <div className="flex items-center gap-2 text-sm">
           <HugeiconsIcon icon={Clock} size={16} />
-          <p className="uppercase">7 Min Read</p>
+          <p className="uppercase">{blog.readTime} Read</p>
         </div>
       </div>
       <div className="bg-secondary-background py-3 px-5 ">
@@ -46,7 +46,7 @@ export default function ArticleCard({ blog }: { blog: BlogPost }) {
 
           <div className="flex items-center gap-3 flex-wrap">
             {blog.badges.map((badge) => (
-              <Badge key={badge}>#{badge}</Badge>
+              <Badge key={badge}>{badge}</Badge>
             ))}
           </div>
         </div>

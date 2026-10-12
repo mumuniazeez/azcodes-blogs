@@ -1,0 +1,32 @@
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AzCodes Blog</title>
+    <link>https://blogs.azcodes.dev</link>
+    <description>Posts about web development, backend engineering, and tech education.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Oct 2026 09:00:00 GMT</lastBuildDate>
+    <atom:link href="https://blogs.azcodes.dev/rss.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>My first blog</title>
+      <link>https://blogs.azcodes.dev/posts/my-first-blog</link>
+      <guid isPermaLink="true">https://blogs.azcodes.dev/posts/my-first-blog</guid>
+      <pubDate>September, 26, 2026</pubDate>
+      <description>This is my first blog post</description>
+      <category>Blog</category>
+<category>AzCodes</category>
+    </item>
+    
+    <item>
+      <title>My first blog</title>
+      <link>https://blogs.azcodes.dev/posts/my-first-blogd</link>
+      <guid isPermaLink="true">https://blogs.azcodes.dev/posts/my-first-blogd</guid>
+      <pubDate>September, 26, 2026</pubDate>
+      <description>This is my first blog post</description>
+      <category>Blog</category>
+<category>AzCodes</category>
+    </item>
+    
+  </channel>
+</rss>
