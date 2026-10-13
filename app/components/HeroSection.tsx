@@ -2,6 +2,7 @@ import React from "react";
 import { Badge } from "./ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Fire, Fire02Icon } from "@hugeicons/core-free-icons";
+import blogs from "~/data/data";
 
 export default function HeroSection() {
   return (
@@ -25,7 +26,7 @@ export default function HeroSection() {
       </p>
 
       <div className="flex gap-3 items-center">
-        <Badge>5 Blogs Published</Badge>
+        <Badge>{blogs.length} Blogs Published</Badge>
       </div>
     </section>
   );
