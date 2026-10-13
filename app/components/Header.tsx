@@ -35,13 +35,13 @@ export default function Header() {
         </div>
       </Link>
 
-      <div className="lg:flex items-center gap-x-3 hidden">
-        <InputGroup>
+      <div className="lg:flex items-center gap-x-3">
+        {/* <InputGroup>
           <InputGroupInput placeholder="Search a post..." />
           <InputGroupAddon>
             <HugeiconsIcon icon={Search} />
           </InputGroupAddon>
-        </InputGroup>
+        </InputGroup> */}
         <a href={"/rss.xml"} target="_blank">
           <Button>
             <HugeiconsIcon icon={Rss} />

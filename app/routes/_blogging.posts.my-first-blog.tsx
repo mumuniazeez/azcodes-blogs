@@ -33,7 +33,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
   return (
     <div className="space-y-8">
       <section className="neo-box p-10 bg-white space-y-5">
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap">
           <Badge className="uppercase bg-black text-white">
             {blog?.topicKey || "Key Topic"}
           </Badge>

@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="py-10 md:px-40 px-20 space-y-8">
+    <div className="py-10 md:px-40 px-10 space-y-8">
       <HeroSection />
 
       <FeatureArticle />

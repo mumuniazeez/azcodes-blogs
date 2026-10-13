@@ -6,7 +6,7 @@ import { ArrowLeft01Icon } from "@hugeicons/core-free-icons";
 
 export default function BlogPost() {
   return (
-    <div className="px-50 py-10 space-y-5">
+    <div className="md:px-50 px-15 py-10 space-y-5">
       <div>
         <Link to={"/"}>
           <Button>
