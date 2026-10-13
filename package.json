@@ -3,10 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
+    "build": "pnpm populate; react-router build",
+    "dev": "pnpm populate; react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "populate": "node populate.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

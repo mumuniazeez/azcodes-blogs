@@ -7,7 +7,6 @@ import type { BlogPost } from "~/data/data";
 import { Link, useNavigate } from "react-router";
 
 export default function ArticleCard({ blog }: { blog: BlogPost }) {
-  console.log(blog);
   const nav = useNavigate();
   return (
     <div

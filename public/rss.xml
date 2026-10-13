@@ -18,15 +18,5 @@
 <category>AzCodes</category>
     </item>
     
-    <item>
-      <title>My first blog</title>
-      <link>https://blogs.azcodes.dev/posts/my-first-blogd</link>
-      <guid isPermaLink="true">https://blogs.azcodes.dev/posts/my-first-blogd</guid>
-      <pubDate>September, 26, 2026</pubDate>
-      <description>This is my first blog post</description>
-      <category>Blog</category>
-<category>AzCodes</category>
-    </item>
-    
   </channel>
 </rss>

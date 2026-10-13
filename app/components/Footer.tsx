@@ -63,12 +63,8 @@ export default function Footer() {
       <div className="space-y-3 md:w-[25%]">
         <h5>NAVIGATION</h5>
         <div className="flex flex-col gap-2">
-          <Link to={"#"}>// HOME</Link>
-          <Link to={"#projects"}>// PROJECTS</Link>
-          <Link to={"#tech-stack"}>// TECH STACK</Link>
-          <Link to={"#experience"}>// EXPERIENCE</Link>
-          <Link to={"#article"}>// ARTICLES</Link>
-          <Link to={"#contact"}>// CONTACT</Link>
+          <Link to={"/"}>// HOME</Link>
+          <Link to={"/#featured"}>// FEATURED ARTICLE</Link>
         </div>
       </div>
       <div className="space-y-3">

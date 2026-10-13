@@ -4,12 +4,14 @@ import blogData from "~/data/data";
 
 export default function FeatureArticle() {
   return (
-    <section>
-      {blogData
-        .filter((b) => b.featured)
-        .map((blog) => (
-          <ArticleCard key={blog.link} blog={blog} />
-        ))}
-    </section>
+    blogData.filter((b) => b.featured).length === 1 && (
+      <section id="featured">
+        {blogData
+          .filter((b) => b.featured)
+          .map((blog) => (
+            <ArticleCard key={blog.link} blog={blog} />
+          ))}
+      </section>
+    )
   );
 }

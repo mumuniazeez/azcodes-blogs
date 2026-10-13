@@ -3,7 +3,7 @@ import type { Route } from "./+types/_blogging.posts.template";
 import blogData from "~/data/data";
 import { Badge } from "~/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar, Eye } from "@hugeicons/core-free-icons";
+import { Calendar, Eye, Time } from "@hugeicons/core-free-icons";
 
 export function meta({ loaderData }: Route.MetaArgs): Route.MetaDescriptors {
   const { blog } = loaderData;
@@ -37,13 +37,13 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
           <Badge className="uppercase bg-black text-white">
             {blog?.topicKey || "Key Topic"}
           </Badge>
-          <Badge>
+          <Badge className="uppercase">
             <HugeiconsIcon icon={Calendar} size={16} />
             <p>{blog?.createdAt || "Month Day, Year"}</p>
           </Badge>
-          <Badge>
-            <HugeiconsIcon icon={Eye} size={16} />
-            <p>{blog?.createdAt || "Month Day, Year"}</p>
+          <Badge className="uppercase">
+            <HugeiconsIcon icon={Time} size={16} />
+            <p>{blog?.readTime || "Infinite"} READ</p>
           </Badge>
         </div>
         <h1 className="text-3xl md:text-5xl">{blog?.title || "Untitled"}</h1>
@@ -52,6 +52,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
             "the blogs description is describing the blog :)"}
         </p>
       </section>
+      <article className="space-y-3"></article>
     </div>
   );
 }

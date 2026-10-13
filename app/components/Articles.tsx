@@ -5,7 +5,6 @@ import ArticleCard from "./ArticleCard";
 import blogData from "~/data/data";
 
 export default function Articles() {
-  console.log(blogData);
   return (
     <section className="space-y-5">
       <div className="border-b pb-2">

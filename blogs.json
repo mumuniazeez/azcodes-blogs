@@ -6,17 +6,7 @@
     "badges": ["Blog", "AzCodes"],
     "link": "/posts/my-first-blog",
     "createdAt": "September, 26, 2026",
-    "featured": true,
-    "readTime": "10 Mins"
-  },
-  {
-    "topicKey": "First time",
-    "title": "My first blog",
-    "description": "This is my first blog post",
-    "badges": ["Blog", "AzCodes"],
-    "link": "/posts/my-first-blogd",
-    "createdAt": "September, 26, 2026",
     "featured": false,
-    "readTime": "10 Mins"
+    "readTime": "2 Mins"
   }
 ]

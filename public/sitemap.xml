@@ -13,11 +13,4 @@
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
-    
-    <url>
-        <loc>https://blogs.azcodes.dev/posts/my-first-blogd</loc>
-        <lastmod>September, 26, 2026</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
-    </url>
     </urlset>
