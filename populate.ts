@@ -30,7 +30,6 @@ let sitemap = `
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${SITE_URL}/</loc>
-    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,7 +39,6 @@ blogsJson.forEach((blog) => {
   sitemap += `
     <url>
         <loc>${SITE_URL}${blog.link}</loc>
-        <lastmod>${blog.createdAt}</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
