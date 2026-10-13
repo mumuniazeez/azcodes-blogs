@@ -5,8 +5,16 @@ import type { Route } from "./+types/_blogging";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Blogs | Mumuni Abdulazeez Adewale" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "AzCodes Blog | Software Engineering, Web & Mobile Development" },
+    {
+      name: "description",
+      content:
+        "AzCodes Blog shares practical insights on software engineering, web development, mobile app development, and product-building lessons.",
+    },
+    { property: "og:site_name", content: "AzCodes Blog" },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://blogs.azcodes.dev/" },
+    { rel: "canonical", href: "https://blogs.azcodes.dev/" },
   ];
 }
 

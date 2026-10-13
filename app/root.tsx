@@ -10,6 +10,30 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+const SITE_NAME = "AzCodes Blog";
+const SITE_URL = "https://blogs.azcodes.dev";
+
+export function meta(): Route.MetaDescriptors {
+  return [
+    { title: `${SITE_NAME} | Software Engineering, Web & Mobile Development` },
+    { name: "description", content: "AzCodes Blog shares practical insights on software engineering, web development, mobile app development, JavaScript, TypeScript, React, and modern product-building lessons." },
+    { name: "keywords", content: "AzCodes, software development blog, web development, mobile app development, JavaScript, TypeScript, React, Node.js, product engineering, engineering blog" },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Mumuni Abdulazeez Adewale" },
+    { property: "og:type", content: "website" },
+    { property: "og:site_name", content: SITE_NAME },
+    { property: "og:title", content: `${SITE_NAME} | Software Engineering, Web & Mobile Development` },
+    { property: "og:description", content: "Practical software engineering insights, tutorials, and lessons from building web and mobile products." },
+    { property: "og:url", content: SITE_URL },
+    { property: "og:image", content: `${SITE_URL}/images/favicon.png` },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: `${SITE_NAME} | Software Engineering, Web & Mobile Development` },
+    { name: "twitter:description", content: "Practical software engineering insights, tutorials, and lessons from building web and mobile products." },
+    { name: "twitter:image", content: `${SITE_URL}/images/favicon.png` },
+    { rel: "canonical", href: SITE_URL },
+  ];
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {

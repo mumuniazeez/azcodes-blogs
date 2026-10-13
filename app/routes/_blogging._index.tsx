@@ -5,8 +5,23 @@ import Articles from "~/components/Articles";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Blogs | Mumuni Abdulazeez Adewale" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "AzCodes Blog | Software Development Insights & Tutorials" },
+    {
+      name: "description",
+      content:
+        "Explore practical software engineering articles, React tutorials, TypeScript lessons, and product-building insights from AzCodes.",
+    },
+    {
+      property: "og:title",
+      content: "AzCodes Blog | Software Development Insights & Tutorials",
+    },
+    {
+      property: "og:description",
+      content:
+        "Explore practical software engineering articles, React tutorials, TypeScript lessons, and product-building insights from AzCodes.",
+    },
+    { property: "og:type", content: "website" },
+    { rel: "canonical", href: "https://blogs.azcodes.dev/" },
   ];
 }
 

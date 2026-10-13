@@ -5,19 +5,26 @@ import { Badge } from "~/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Calendar, Eye, Time } from "@hugeicons/core-free-icons";
 
-export function meta({ loaderData }: Route.MetaArgs): Route.MetaDescriptors {
+export function meta({ loaderData, location }: Route.MetaArgs): Route.MetaDescriptors {
   const { blog } = loaderData;
+  const canonicalUrl = `https://blogs.azcodes.dev${location.pathname}`;
+  const title = blog?.title || "My first blog";
+  const description =
+    blog?.description ||
+    "A practical software engineering story, lessons, and product-building insights from AzCodes.";
+
   return [
-    { title: blog?.title || "Untitled" },
-    {
-      property: "og:title",
-      content: blog?.description || "Untitled (not saved)",
-    },
-    {
-      name: "description",
-      content: blog?.description || "Untitled (not saved)",
-    },
-    { name: "keywords", content: blog?.badges.toString() || "" },
+    { title: `${title} | AzCodes Blog` },
+    { name: "description", content: description },
+    { name: "keywords", content: blog?.badges.join(", ") || "software engineering, blog, AzCodes" },
+    { property: "og:title", content: title },
+    { property: "og:description", content: description },
+    { property: "og:type", content: "article" },
+    { property: "og:url", content: canonicalUrl },
+    { name: "twitter:card", content: "summary_large_image" },
+    { rel: "canonical", href: canonicalUrl },
+    { property: "article:published_time", content: blog?.createdAt || "2026-09-26" },
+    { property: "article:section", content: blog?.topicKey || "Software development" },
   ];
 }
 
