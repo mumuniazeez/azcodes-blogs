@@ -16,8 +16,11 @@ const blogData: BlogPost[] = [
     "title": "Teaching Teens to Code: My Experience at TGDI Tech Summer 2026",
     "description": " I volunteered at TGDI Tech Summer 2026, teaching HTML, CSS, Tailwind CSS, and responsible AI to more than 40 teens—and helping them turn their ideas into real projects.",
     "badges": [
-      "Blog",
-      "AzCodes"
+      "Volunteering",
+      "Tech Summer for Teens",
+      "Community Service",
+      "Education",
+      "AzCodes blogs"
     ],
     "link": "/posts/teaching-teens-at-tgdi-tech-summer",
     "createdAt": "October, 18, 2026",
