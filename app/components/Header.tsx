@@ -27,11 +27,11 @@ export default function Header() {
     setNavOpen(false);
   }, [pathname, hash]);
   return (
-    <header className="flex items-center justify-between py-3 px-10 md:px-30 bg-background border-b-2 gap-x-5 sticky top-0 z-9999">
+    <header className="flex items-center justify-between py-3 px-5 md:px-30 bg-background border-b-2">
       <Link to="/" title="Go to blog homepage">
         <div className="bg-main border-border shadow-shadow border-2 p-2 font-bold flex items-center gap-x-2">
           <HugeiconsIcon icon={BookOpen} />{" "}
-          <h1 className="text-2xl">blogs.azcodes.dev</h1>
+          <h1 className="md:text-2xl text-xl">blogs.azcodes.dev</h1>
         </div>
       </Link>
 

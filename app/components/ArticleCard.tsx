@@ -13,7 +13,7 @@ export default function ArticleCard({ blog }: { blog: BlogPost }) {
       className="shadow-shadow border-2 border-border group hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none transition-all h-fit cursor-pointer"
       onClick={() => nav(blog.link)}
     >
-      <div className="flex items-center justify-between py-3 px-5 bg-main">
+      <div className="flex items-center flex-wrap justify-between py-3 px-5 bg-main">
         <div className="flex items-center gap-2">
           <Badge className="uppercase bg-black text-white">
             {blog.topicKey}

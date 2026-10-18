@@ -42,12 +42,12 @@ export default function Footer() {
     <footer className="flex md:items-center justify-between py-10 px-10  md:px-30 bg-secondary-background border-t-2 flex-col md:flex-row gap-y-5">
       <div className="space-y-3 md:w-[25%]">
         <div className="flex items-center gap-x-2">
-          <a href="#">
+          <Link to="/">
             <div className="bg-main border-border shadow-shadow border-2 p-2 font-bold flex items-center gap-x-2">
               <HugeiconsIcon icon={CodeSimpleIcon} />{" "}
               <h1 className="text-2xl">blogs.azcodes.dev</h1>
             </div>
-          </a>
+          </Link>
         </div>
         <p className="text-black/70">
           Hand-crafted Neobrutalist blogging website for Abdulazeez Mumuni
