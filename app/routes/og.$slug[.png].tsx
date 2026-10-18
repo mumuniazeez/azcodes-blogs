@@ -4,11 +4,25 @@ import { readFile } from "node:fs/promises";
 import type { Route } from "./+types/og.$slug[.png]";
 import blogs from "~/data/data";
 
+let fontData: ArrayBuffer | undefined;
+
+async function getFont() {
+  if (!fontData) {
+    const res = await fetch(
+      "https://blogs.azcodes.dev/fonts/SpaceGrotesk-Regular.ttf",
+    );
+    if (!res.ok) throw new Error("Failed to load font");
+    fontData = await res.arrayBuffer();
+  }
+  return fontData;
+}
 export async function loader({ params }: Route.LoaderArgs) {
   const post = await blogs.find((b) => b.slug === params.slug); // your own data fetch
   if (!post) throw new Response("Not found", { status: 404 });
 
-  const font = await readFile("/fonts/SpaceGrotesk-Regular.ttf");
+  // const font = await readFile(
+  //   "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-vietnamese-wght-normal.woff2",
+  // );
 
   const svg = await satori(
     <div
@@ -58,7 +72,9 @@ export async function loader({ params }: Route.LoaderArgs) {
     {
       width: 1200,
       height: 630,
-      fonts: [{ name: "Inter", data: font, weight: 700, style: "normal" }],
+      fonts: [
+        { name: "Inter", data: await getFont(), weight: 700, style: "normal" },
+      ],
     },
   );
 
