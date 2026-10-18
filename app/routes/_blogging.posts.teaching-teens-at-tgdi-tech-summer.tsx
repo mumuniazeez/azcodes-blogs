@@ -28,7 +28,7 @@ export function meta({
     },
     { property: "og:title", content: title },
     { property: "og:description", content: description },
-    { property: "og:image", content: description },
+    { property: "og:image", content: image },
     { property: "og:type", content: "article" },
     { property: "og:url", content: canonicalUrl },
     { name: "twitter:card", content: "summary_large_image" },
