@@ -39,11 +39,11 @@ export async function loader({ params }: Route.LoaderArgs) {
       }}
     >
       <div
-        style={{ fontSize: 28, display: "flex", alignItems: "center", gap: 10 }}
+        style={{ fontSize: 38, display: "flex", alignItems: "center", gap: 10 }}
       >
         <img
           src="https://blogs.azcodes.dev/images/favicon.png"
-          style={{ width: 40 }}
+          style={{ width: 60 }}
         />
         blogs.azcodes.dev
       </div>
