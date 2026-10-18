@@ -48,10 +48,9 @@ export default function Footer() {
               <h1 className="text-2xl">blogs.azcodes.dev</h1>
             </div>
           </a>
-          <Badge className="bg-background">BLOG WEBSITE V2.0</Badge>
         </div>
         <p className="text-black/70">
-          Hand-crafted Neobrutalist developer portfolio for Abdulazeez Mumuni
+          Hand-crafted Neobrutalist blogging website for Abdulazeez Mumuni
           (AzCodes). Engineered with React, Typescript, Tailwind CSS, and
           Motion.
         </p>

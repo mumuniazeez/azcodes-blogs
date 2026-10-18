@@ -10,7 +10,7 @@ export default function ArticleCard({ blog }: { blog: BlogPost }) {
   const nav = useNavigate();
   return (
     <div
-      className="shadow-shadow border-2 border-border group hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none transition-all cursor-pointer"
+      className="shadow-shadow border-2 border-border group hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none transition-all h-fit cursor-pointer"
       onClick={() => nav(blog.link)}
     >
       <div className="flex items-center justify-between py-3 px-5 bg-main">
@@ -51,7 +51,7 @@ export default function ArticleCard({ blog }: { blog: BlogPost }) {
         </div>
 
         <div className="border-t pt-2 flex items-center justify-between">
-          <p className="text-sm text-black/70">September 24, 2026</p>
+          <p className="text-sm text-black/70">{blog.createdAt}</p>
 
           <Link to={blog.link}>
             <Button className={"group-hover:bg-black group-hover:text-white"}>

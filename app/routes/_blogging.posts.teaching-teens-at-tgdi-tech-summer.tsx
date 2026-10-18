@@ -192,7 +192,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
         </p>
         <h2 className="text-2xl">Some projects built by the students:</h2>
         <ul>
-          <li className="flex">
+          <li className="flex flex-wrap">
             <ArrowRight />
             VERDA Climate:{" "}
             <a
@@ -203,7 +203,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
               https://verda-climate.vercel.app/
             </a>
           </li>
-          <li className="flex">
+          <li className="flex flex-wrap">
             <ArrowRight />J & P Modelings:{" "}
             <a
               href="https://real-estate-agents-eight.vercel.app/"
