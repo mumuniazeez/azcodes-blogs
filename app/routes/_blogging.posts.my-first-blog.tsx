@@ -38,7 +38,7 @@ export async function loader({ url }: Route.LoaderArgs) {
 export default function BlogPost({ loaderData }: Route.ComponentProps) {
   const { blog } = loaderData;
   return (
-    <div className="space-y-8">
+    <div className="space-y-15">
       <section className="neo-box p-10 bg-white space-y-5">
         <div className="flex gap-3 flex-wrap">
           <Badge className="uppercase bg-black text-white">
@@ -59,7 +59,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
             "the blogs description is describing the blog :)"}
         </p>
       </section>
-      <article className="space-y-3">
+      <article className="space-y-3 text-xl">
         <h1 className="text-4xl">Welcome to my first blog post</h1>
         <p>
           I'm Abdulazeez (aka AzCodes), I'm a full stack software developer, i
