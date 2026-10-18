@@ -38,7 +38,7 @@ const blogData: BlogPost[] = [
     "link": "/posts/my-first-blog",
     "createdAt": "September, 26, 2026",
     "featured": false,
-    "readTime": "2 Mins"
+    "readTime": "1 Mins"
   }
 ];
 
