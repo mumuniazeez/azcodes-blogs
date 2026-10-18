@@ -4,6 +4,7 @@ import blogData from "~/data/data";
 import { Badge } from "~/components/ui/badge";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Calendar, Eye, Time } from "@hugeicons/core-free-icons";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export function meta({
   loaderData,
@@ -105,8 +106,15 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
           help the students, learn, and grow over the course of the two weeks
           training.
         </p>
-        <div className="text-center">
-          <img src="/images/tgdi-images/maxwell-teachi" />
+        <div className="flex items-center flex-col my-5">
+          <img
+            src="/images/tgdi-images/volunteers-group-picture.jpg"
+            className="md:w-200 w-full"
+            alt="TGDI Cohort 4 Facilitators/Volunteers group photo"
+          />
+          <p className="text-sm italic">
+            TGDI Cohort 4 Facilitators/Volunteers group photo
+          </p>
         </div>
         <h1 className="text-4xl">How do the training go?</h1>
         <p>
@@ -149,9 +157,47 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
         <p>
           And at the end, 2 students, went home with a free laptop given by
           TGDI, it was a surprise for the students, and an encouragement for
-          them to continue learning and
+          them to continue learning and for them to continue to grow.
         </p>
-        <h1 className="text-4xl">How do the training go?</h1>
+        <div className="flex items-center flex-col my-5">
+          <img
+            src="/images/tgdi-images/students-when-working-on-project-1.jpg"
+            className="md:w-200 w-full"
+            alt=" Image of students when working on their projects during the Cohort 4"
+          />
+          <p className="text-sm italic">
+            Image of students when working on their projects during the Cohort 4
+          </p>
+        </div>
+        <h1 className="text-4xl">Wrapping things up</h1>
+        <p>
+          Those two week, were absolutely amazing, it's a combination or stress,
+          fun, patient, and wonderful memories. And that stood out to me most is
+          that I'm able to help create a spark of innovation within people I
+          might never meet again, and but they will never forget where they got
+          the spark from. and I'll always be proud of that.
+        </p>
+        <h2 className="text-2xl">
+          Some of the Projects that were built by the students:
+        </h2>
+        <ul>
+          <li className="flex">
+            <ArrowRight />
+            VERDA Climate:{" "}
+            <a href="https://verda-climate.vercel.app/" className="underline">
+              https://verda-climate.vercel.app/
+            </a>
+          </li>
+          <li className="flex">
+            <ArrowRight />J & P Modelings:{" "}
+            <a
+              href="https://real-estate-agents-eight.vercel.app/"
+              className="underline"
+            >
+              https://real-estate-agents-eight.vercel.app/
+            </a>
+          </li>
+        </ul>
       </article>
     </div>
   );
