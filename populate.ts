@@ -8,6 +8,7 @@ interface BlogPost {
   description: string;
   badges: string[];
   link: string;
+  slug: string;
   createdAt: string;
   featured: boolean;
   readTime: string;
@@ -94,6 +95,7 @@ export interface BlogPost {
   description: string;
   badges: string[];
   link: string;
+  slug: string;
   createdAt: string;
   featured: boolean;
   readTime: string;

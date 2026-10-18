@@ -11,6 +11,7 @@
       "AzCodes blogs"
     ],
     "link": "/posts/teaching-teens-at-tgdi-tech-summer",
+    "slug": "teaching-teens-at-tgdi-tech-summer",
     "createdAt": "October, 18, 2026",
     "featured": true,
     "readTime": "5 Mins"
@@ -20,6 +21,7 @@
     "title": "My first blog",
     "description": "This is my first blog post",
     "badges": ["Blog", "AzCodes"],
+    "slug": "my-first-blog",
     "link": "/posts/my-first-blog",
     "createdAt": "September, 26, 2026",
     "featured": false,

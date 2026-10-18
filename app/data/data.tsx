@@ -5,6 +5,7 @@ export interface BlogPost {
   description: string;
   badges: string[];
   link: string;
+  slug: string;
   createdAt: string;
   featured: boolean;
   readTime: string;
@@ -23,6 +24,7 @@ const blogData: BlogPost[] = [
       "AzCodes blogs"
     ],
     "link": "/posts/teaching-teens-at-tgdi-tech-summer",
+    "slug": "teaching-teens-at-tgdi-tech-summer",
     "createdAt": "October, 18, 2026",
     "featured": true,
     "readTime": "5 Mins"
@@ -35,6 +37,7 @@ const blogData: BlogPost[] = [
       "Blog",
       "AzCodes"
     ],
+    "slug": "my-first-blog",
     "link": "/posts/my-first-blog",
     "createdAt": "September, 26, 2026",
     "featured": false,

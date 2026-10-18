@@ -17,6 +17,8 @@ export function meta({
     blog?.description ||
     "A practical software engineering story, lessons, and product-building insights from AzCodes.";
 
+  const image = `https://blogs.azcodes.dev/og/${blog?.slug}.png`;
+
   return [
     { title: `${title} | AzCodes Blog` },
     { name: "description", content: description },
@@ -26,6 +28,7 @@ export function meta({
     },
     { property: "og:title", content: title },
     { property: "og:description", content: description },
+    { property: "og:image", content: description },
     { property: "og:type", content: "article" },
     { property: "og:url", content: canonicalUrl },
     { name: "twitter:card", content: "summary_large_image" },
