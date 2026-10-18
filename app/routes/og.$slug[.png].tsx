@@ -51,8 +51,9 @@ export async function loader({ params }: Route.LoaderArgs) {
         style={{
           fontSize: 72,
           lineHeight: 1.1,
-          display: "flex",
+          display: "block",
           fontWeight: "bold",
+          lineClamp: 3,
         }}
       >
         {post.title}
@@ -61,13 +62,19 @@ export async function loader({ params }: Route.LoaderArgs) {
         style={{
           fontSize: 24,
           lineHeight: 1.1,
-          display: "flex",
+          display: "block",
           paddingRight: 50,
+          lineClamp: 2,
         }}
       >
         {post.description}
       </div>
       <div style={{ fontSize: 28, display: "flex" }}>{post.createdAt}</div>
+      <button
+        style={{ border: "2px solid black", width: "fit-content", padding: 10 }}
+      >
+        Start Reading - {post.readTime} read
+      </button>
     </div>,
     {
       width: 1200,
