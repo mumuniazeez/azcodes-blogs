@@ -71,7 +71,12 @@ export async function loader({ params }: Route.LoaderArgs) {
       </div>
       <div style={{ fontSize: 28, display: "flex" }}>{post.createdAt}</div>
       <button
-        style={{ border: "2px solid black", width: "fit-content", padding: 10 }}
+        style={{
+          border: "2px solid black",
+          width: "fit-content",
+          padding: 10,
+          fontSize: 24,
+        }}
       >
         Start Reading - {post.readTime} read
       </button>
