@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const SITE_NAME = "AzCodes Blog";
 const SITE_URL = "https://blogs.azcodes.dev";
@@ -80,6 +81,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Analytics />
         {children}
         <ScrollRestoration />
         <Scripts />

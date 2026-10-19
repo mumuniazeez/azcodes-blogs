@@ -55,28 +55,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
   const { blog } = loaderData;
   // /posts/teaching-teens-at-tgdi-tech-summer
   return (
-    <div className="space-y-15">
-      <section className="neo-box p-10 bg-white space-y-5">
-        <div className="flex gap-3 flex-wrap">
-          <Badge className="uppercase bg-black text-white">
-            {blog?.topicKey || "Key Topic"}
-          </Badge>
-          <Badge className="uppercase">
-            <HugeiconsIcon icon={Calendar} size={16} />
-            <p>{blog?.createdAt || "Month Day, Year"}</p>
-          </Badge>
-          <Badge className="uppercase">
-            <HugeiconsIcon icon={Time} size={16} />
-            <p>{blog?.readTime || "Infinite"} READ</p>
-          </Badge>
-        </div>
-        <h1 className="text-3xl md:text-5xl">{blog?.title || "Untitled"}</h1>
-        <p className="text-xl md:w-[50%]">
-          {blog?.description ||
-            "the blogs description is describing the blog :)"}
-        </p>
-      </section>
-      <article className="space-y-3 text-xl">
+     <article className="space-y-3 text-xl">
         <p>
           Hi there, in this blog post I'll be sharing my experience as a
           facilitator/volunteer at the TGDI Tech Summer, where I taught over 40
@@ -220,6 +199,5 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
 
         <p>Thanks for reading.</p>
       </article>
-    </div>
   );
 }
