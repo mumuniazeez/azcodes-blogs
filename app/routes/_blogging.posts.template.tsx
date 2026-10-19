@@ -1,9 +1,6 @@
 import React from "react";
 import type { Route } from "./+types/_blogging.posts.template";
 import blogData from "~/data/data";
-import { Badge } from "~/components/ui/badge";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar, Eye, Time } from "@hugeicons/core-free-icons";
 
 export function meta({
   loaderData,
