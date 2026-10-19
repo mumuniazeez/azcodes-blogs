@@ -11,7 +11,7 @@ export default function FeatureArticle() {
         <div className="border-b pb-2">
           <div className="flex items-center gap-3 text-sm">
             <HugeiconsIcon icon={BookOpen} size={16} />
-            <p className="font-bold">FEATURES ARTICLES</p>
+            <p className="font-bold">FEATURED ARTICLES</p>
           </div>
         </div>
         {blogData
