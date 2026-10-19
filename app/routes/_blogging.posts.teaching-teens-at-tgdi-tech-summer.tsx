@@ -147,21 +147,21 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
         </p>
         <p>
           About 98% of the students came in with zero knowledge of coding, some
-          haven't used a laptop before, and it's absolutely amazing to see this
+          haven't used a laptop before, and it's absolutely amazing to see these
           students actually build stuff independently, I was so happy about
-          this, this shows that we had done a very good job.
+          this, it shows that we had done a very good job.
         </p>
         <p>
           Overall, these two weeks was absolutely awesome, we learned, built,
           had fun, played games, and had a wonderful experience together, I
-          can't forget those experiences
+          can't forget those experiences.
         </p>
         <p>
           And at the end, 2 students, went home with a free laptop given by
           TGDI, it was a surprise for the students and an encouragement for them
           to continue learning and for them to continue to grow.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3">
           <div className="flex items-center flex-col my-5">
             <img
               src="/images/tgdi-images/students-when-working-on-project-1.jpg"
