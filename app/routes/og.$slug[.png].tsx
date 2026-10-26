@@ -17,12 +17,8 @@ async function getFont() {
   return fontData;
 }
 export async function loader({ params }: Route.LoaderArgs) {
-  const post = await blogs.find((b) => b.slug === params.slug); // your own data fetch
+  const post = blogs.find((b) => b.slug === params.slug); // your own data fetch
   if (!post) throw new Response("Not found", { status: 404 });
-
-  // const font = await readFile(
-  //   "node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-vietnamese-wght-normal.woff2",
-  // );
 
   const svg = await satori(
     <div
