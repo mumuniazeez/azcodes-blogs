@@ -48,6 +48,7 @@ export async function loader({ url }: Route.LoaderArgs) {
 
 export default function BlogPost({ loaderData }: Route.ComponentProps) {
   // my-journey-in-the-tech-space
+  // My Journey in the Tech Space
   const { blog } = loaderData;
   return (
     <article className="space-y-3 text-xl">
@@ -148,6 +149,61 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
         </p>
       </div>
       <h1 className="text-4xl">How I've grown in this field ever since then</h1>
+      <p>
+        I personally didn't relent from continues learning, I started with
+        frontend web development, spending must of my years perfecting my
+        knowledge of HTML CSS, JavaScript, ReactJS, NextJS. I almost never see
+        myself learning backend development. I build a lot of frontend projects,
+        and learned a lot from those projects.
+      </p>
+      <p>
+        I started to learn backend development in late 2024, starting with
+        NodeJS, ExpressJS. and i feel in love to backend development that i
+        prefer to do it than frontend development
+      </p>
+      <p>
+        I also started to learn mobile app development using React Native, I
+        helped in the development of a Escrow Payment mobile app.
+      </p>
+      <p>
+        My main focus for now is on backend development, I want to be very good
+        at it, and to be able to build the systems that powers a website or
+        application, and that works efficiently.
+      </p>
+      <h1 className="text-4xl">The challenges i faced</h1>
+      <p>
+        With all that being said, this wasn't a smooth journey at all. It's
+        filled with ups and downs, and a whole lot of challenges
+      </p>
+      <p>
+        One of the main challenges i faced and i think every newbie faces is
+        finding a community that guides and allows them to grow in the tech
+        space. This was a really huge hurdle for me, as it's seams like apart
+        from my friends not one else is doing what I'm doing.
+      </p>
+      <p>
+        Another challenge is electricity and Internat access, this is a problem
+        most Nigerian face when it comes to going into tech, with unstable
+        electricity and poor and expensive internat provision, it really becomes
+        hard to learn and explore
+      </p>
+      <h1 className="text-4xl">
+        My overall overview of my journey into the tech space
+      </h1>
+      <p>
+        I would say my journey was a special one with wonderful experience,
+        coming from not knowing how to get started to being a full stack
+        developer being self taught. I really appreciate myself for coming this
+        far, and I appreciate my Dad for the advice that he gave me to go learn
+        computer, cause without that, i wouldn't have been like this at all. I
+        appreciate everyone who has been a part of this journey and that has
+        helped my in one way or the other, without your supports i might not be
+        here today.
+      </p>
+      <p>
+        Thanks for patiently reading this, i really you took out of your time to
+        read about my journey.
+      </p>
     </article>
   );
 }
