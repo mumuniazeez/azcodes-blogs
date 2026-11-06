@@ -54,7 +54,7 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
       <p>
         Hey there. Welcome to this blog post, <br /> My name is Abdulazeez (aka
         AzCodes), I'm a full stack software developer, I build both mobile and
-        web applications with 4 over years of experience and in this blog post
+        web applications with over 4 years of experience and in this blog post
         I'll be sharing my journey in the tech space, how i started, how i
         learned, the challenges I faced, the victories I had and an overall
         overview on my journey in the tech space.
@@ -78,9 +78,9 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
       </p>
       <p>
         After sometimes, of learning how to use a computer, i started to develop
-        serious interest in this computers, I loved it and enjoys using it, I
-        would write document, design graphics and so on and after sometime, my
-        parents notice this interest and decided to buy me my first laptop.
+        serious interest in computers, I loved it and enjoys using it, I would
+        write document, design graphics and so on and after sometime, my parents
+        notice this interest and decided to buy me my first laptop.
       </p>
       <div className="flex items-center flex-col my-5">
         <img
@@ -101,8 +101,53 @@ export default function BlogPost({ loaderData }: Route.ComponentProps) {
         After spending a lot of time learning the basics of using a computer i
         started to seek more knowledge to add to what i already knew, and that's
         when i heard about coding and programming. I didn't really understand
-        the concept behind this and have no idea how to get started.
+        the concept behind this and have no idea how to get started and don;t
+        have anyone to guide me through.
       </p>
+      <p>
+        Fast forward to when my school held a small ICT training, and I and some
+        other students was called by our ICT teacher to help facilitate this
+        training. And that's where I met a student from my school called
+        Promise, and he was the one who actually opened my eye to coding and web
+        development. We had a discussion on our way home from school and it was
+        this discussion that changed everything and lead to actually start
+        learning.
+      </p>
+      <p>
+        Promise is just like me, he just started learning HTML, so i joined him
+        and together we would download and share tutorials, i still remember the
+        time i discovered vscode after using notepad for a long time, it felt
+        really special to me, i remember running to school just to tell Promise
+        about my discovers. Now i realize how silly that was, but it was a very
+        good experience for me back then. We would discuss everyday about new
+        stuff we learned and yap a lot, we became close friends.
+      </p>
+      <p>
+        We continued to learn and help each other grow and we also met a new
+        person who is also learning to code, his name is David, making us three,
+        we continue to help each other learn and grow.
+      </p>
+      <p>
+        Me and David started a Whatsapp group where we teach others HTML, and
+        CSS although we ourselves are still learning, and i think this really
+        helped me a lot personally, cause during the course of teaching I was
+        also able to learn a lot.
+      </p>
+      <p>
+        I really appreciate them for being part of this journey, it means a lot
+        to me.
+      </p>
+      <div className="flex items-center flex-col my-5">
+        <img
+          src="/images/my-journey-images/me_promise_david.jpg"
+          className="md:w-200 w-full"
+          alt="TGDI Cohort 4 Facilitators/Volunteers group photo"
+        />
+        <p className="text-sm italic">
+          Image of me, Promise and David at a competition
+        </p>
+      </div>
+      <h1 className="text-4xl">How I've grown in this field ever since then</h1>
     </article>
   );
 }
