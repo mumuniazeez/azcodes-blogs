@@ -115,3 +115,11 @@ fs.writeFileSync(path.join("app", "data", "data.tsx"), code, {
 });
 
 console.log("Blog Post Populated");
+
+// populate api for other site to be able to fetch
+
+fs.writeFileSync(path.join("public", "api.json"), blogsJsonString, {
+  encoding: "utf-8",
+});
+
+console.log("API Populated");
