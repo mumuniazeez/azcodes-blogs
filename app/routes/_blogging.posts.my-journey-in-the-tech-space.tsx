@@ -49,161 +49,192 @@ export async function loader({ url }: Route.LoaderArgs) {
 export default function BlogPost({ loaderData }: Route.ComponentProps) {
   // my-journey-in-the-tech-space
   // My Journey in the Tech Space
+
+  // My Tech Journey: A Self Taught Nigerian Developer’s Story
+  //
+  // I went from wanting to learn barbing to becoming a full stack developer. Here is how I started, the challenges I faced in Nigeria, and what I learned.
   const { blog } = loaderData;
   return (
     <article className="space-y-3 text-xl">
       <p>
-        Hey there. Welcome to this blog post, <br /> My name is Abdulazeez (aka
-        AzCodes), I'm a full stack software developer, I build both mobile and
-        web applications with over 4 years of experience and in this blog post
-        I'll be sharing my journey in the tech space, how i started, how i
-        learned, the challenges I faced, the victories I had and an overall
-        overview on my journey in the tech space.
+        In 2020, I was about to start secondary school and I planned to learn
+        barbing. My dad had a different idea: learn how to use a computer first.
+        That one suggestion is the reason I am now a full stack developer, a
+        backend engineer and a coding instructor.
       </p>
       <p>
-        To be honest, my experience and memories over all these years cannot be
-        contained in this blog post, so I'll try my best to give you the best
-        picture of how the journey went for me.
+        My name is Abdulazeez, also known as AzCodes. I build both mobile and
+        web applications, and in this post I'll share how I started, how I
+        learned, the challenges I faced, the wins I've had, and what I would
+        tell anyone starting out today.
+      </p>
+      <p>
+        To be honest, all my experiences and memories over the years cannot fit
+        into one blog post, so I'll try my best to give you a clear picture of
+        how the journey went.
       </p>
 
-      <h1 className="text-4xl">How the journey begin</h1>
+      <h1 className="text-4xl">How the journey began</h1>
       <p>
-        It all begins in 2020, when i was trying to decide what trade or skill
-        to learn as I was about to enter into high school (secondary school), I
-        looked at some skill and the funny thing is initially I never had
-        interest in tech probably because i wasn't exposed to it. I was thinking
-        of learning barbing at a hair saloon. Until my dad suggested that I
-        should go learn how to use computers, then i can go and learn whatever
-        else i want to learn, so I agreed and was enrolled into a computer
-        school. That's how the journey begin.
+        It all began in 2020. I was trying to decide which trade or skill to
+        learn before entering secondary school, and I looked at a few options.
+        The funny thing is that I had no interest in tech at first, probably
+        because I had never been exposed to it. I was thinking of learning
+        barbing at a barbershop. Then my dad suggested that I learn how to use a
+        computer first, and that I could go on to learn whatever else I wanted
+        afterwards. I agreed and was enrolled in a computer school. That's how
+        the journey began.
       </p>
       <p>
-        After sometimes, of learning how to use a computer, i started to develop
-        serious interest in computers, I loved it and enjoys using it, I would
-        write document, design graphics and so on and after sometime, my parents
-        notice this interest and decided to buy me my first laptop.
+        After some time of learning how to use a computer, I developed a serious
+        interest in it. I loved it and enjoyed using it. I would write
+        documents, design graphics and more. My parents noticed this interest
+        and decided to buy me my first laptop.
       </p>
       <div className="flex items-center flex-col my-5">
         <img
           src="/images/my-journey-images/using_my_old_laptop.jpg"
           className="md:w-100 w-full"
-          alt="TGDI Cohort 4 Facilitators/Volunteers group photo"
+          alt="AzCodes using my old laptop"
         />
-        <p className="text-sm italic">Image of my using my old laptop</p>
+        <p className="text-sm italic">Image of me using my old laptop</p>
       </div>
       <p>
-        This continued for about 2 years where i learned how to use a computer,
-        draft all kinds of document, design graphics, and so on.. It was a
-        really fun experience for me, as it was this that captured my interest
-        for tech.
+        This went on for about two years, during which I learned how to draft
+        all kinds of documents, design graphics and more. It was a really fun
+        experience, and it is what captured my interest in tech.
       </p>
-      <h1 className="text-4xl">I wanted to learn more than i already knew</h1>
+      <h1 className="text-4xl">I wanted to learn more than I already knew</h1>
       <p>
-        After spending a lot of time learning the basics of using a computer i
-        started to seek more knowledge to add to what i already knew, and that's
-        when i heard about coding and programming. I didn't really understand
-        the concept behind this and have no idea how to get started and don;t
-        have anyone to guide me through.
-      </p>
-      <p>
-        Fast forward to when my school held a small ICT training, and I and some
-        other students was called by our ICT teacher to help facilitate this
-        training. And that's where I met a student from my school called
-        Promise, and he was the one who actually opened my eye to coding and web
-        development. We had a discussion on our way home from school and it was
-        this discussion that changed everything and lead to actually start
-        learning.
+        After spending a lot of time on the basics of using a computer, I
+        started looking for more to add to what I already knew, and that is when
+        I heard about coding and programming. I didn't really understand the
+        idea behind it, I didn't know how to get started, and I had no one to
+        guide me.
       </p>
       <p>
-        Promise is just like me, he just started learning HTML, so i joined him
-        and together we would download and share tutorials, i still remember the
-        time i discovered vscode after using notepad for a long time, it felt
-        really special to me, i remember running to school just to tell Promise
-        about my discovers. Now i realize how silly that was, but it was a very
-        good experience for me back then. We would discuss everyday about new
-        stuff we learned and yap a lot, we became close friends.
+        Then my school held a small ICT training, and some other students and I
+        were called by our ICT teacher to help facilitate it. That is where I
+        met a student from my school called Promise, and he was the one who
+        actually opened my eyes to coding and web development. We talked on our
+        way home from school, and that conversation changed everything and led
+        me to actually start learning.
       </p>
       <p>
-        We continued to learn and help each other grow and we also met a new
-        person who is also learning to code, his name is David, making us three,
-        we continue to help each other learn and grow.
+        Promise was in the same position as me. He had just started learning
+        HTML, so I joined him, and together we would download and share
+        tutorials. I still remember the day I discovered VS Code after using
+        Notepad for a long time. It felt really special, and I ran to school
+        just to tell Promise about my discovery. I realize now how silly that
+        was, but it was a great experience back then. We would talk every day
+        about the new things we had learned, and we became close friends.
       </p>
       <p>
-        Me and David started a Whatsapp group where we teach others HTML, and
-        CSS although we ourselves are still learning, and i think this really
-        helped me a lot personally, cause during the course of teaching I was
-        also able to learn a lot.
+        We kept learning and helping each other grow, and we met another person
+        who was also learning to code. His name is David, and with him we became
+        three, still helping each other learn and grow.
       </p>
       <p>
-        I really appreciate them for being part of this journey, it means a lot
-        to me.
+        David and I started a WhatsApp group where we taught others HTML and
+        CSS, even though we were still learning ourselves. This helped me a lot
+        personally, because teaching forced me to understand things properly.
+      </p>
+      <p>
+        I really appreciate Promise and David for being part of this journey. It
+        means a lot to me.
       </p>
       <div className="flex items-center flex-col my-5">
         <img
           src="/images/my-journey-images/me_promise_david.jpg"
           className="md:w-200 w-full"
-          alt="TGDI Cohort 4 Facilitators/Volunteers group photo"
+          alt="Image of AzCodes, Promise and David at a competition"
         />
         <p className="text-sm italic">
           Image of me, Promise and David at a competition
         </p>
       </div>
-      <h1 className="text-4xl">How I've grown in this field ever since then</h1>
+      <h1 className="text-4xl">How I've grown in this field since then</h1>
       <p>
-        I personally didn't relent from continues learning, I started with
-        frontend web development, spending must of my years perfecting my
-        knowledge of HTML CSS, JavaScript, ReactJS, NextJS. I almost never see
-        myself learning backend development. I build a lot of frontend projects,
-        and learned a lot from those projects.
+        I never stopped learning. I started with frontend web development and
+        spent most of my early years perfecting HTML, CSS, JavaScript, React.js
+        and Next.js. I never imagined myself learning backend development. I
+        built a lot of frontend projects and learned a great deal from them.
       </p>
       <p>
-        I started to learn backend development in late 2024, starting with
-        NodeJS, ExpressJS. and i feel in love to backend development that i
-        prefer to do it than frontend development
+        I started learning backend development in late 2024, beginning with
+        Node.js and Express.js, and I fell in love with it so much that I now
+        prefer it to frontend development.
       </p>
       <p>
-        I also started to learn mobile app development using React Native, I
-        helped in the development of a Escrow Payment mobile app.
+        I also started learning mobile app development with React Native, and I
+        helped build an escrow payment mobile app.
       </p>
       <p>
-        My main focus for now is on backend development, I want to be very good
-        at it, and to be able to build the systems that powers a website or
-        application, and that works efficiently.
+        My main focus now is backend development. I want to be very good at it
+        and build the systems that power websites and applications and keep them
+        running efficiently.
       </p>
-      <h1 className="text-4xl">The challenges i faced</h1>
+      <h1 className="text-4xl">The wins along the way</h1>
       <p>
-        With all that being said, this wasn't a smooth journey at all. It's
-        filled with ups and downs, and a whole lot of challenges
-      </p>
-      <p>
-        One of the main challenges i faced and i think every newbie faces is
-        finding a community that guides and allows them to grow in the tech
-        space. This was a really huge hurdle for me, as it's seams like apart
-        from my friends not one else is doing what I'm doing.
+        It hasn't been all struggle. Some of the things I'm proudest of came
+        from the same habit that started in that WhatsApp group: learning by
+        teaching.
       </p>
       <p>
-        Another challenge is electricity and Internat access, this is a problem
-        most Nigerian face when it comes to going into tech, with unstable
-        electricity and poor and expensive internat provision, it really becomes
-        hard to learn and explore
+        I work at a computer institute, where I teach people how to code. I
+        also volunteer as a tech educator with TGDI (Tooltip Grassroots
+        Development Initiative), helping young people take their first steps in
+        tech, and I'm active in the Hack Club community. Today I work as a
+        Backend Engineer at Charmpay, building real systems
+        for real users.
       </p>
-      <h1 className="text-4xl">
-        My overall overview of my journey into the tech space
-      </h1>
+      {/* Add one or two specific wins here, for example the escrow app's name, your role on it, and what you built. */}
+      <h1 className="text-4xl">The challenges I faced</h1>
       <p>
-        I would say my journey was a special one with wonderful experience,
-        coming from not knowing how to get started to being a full stack
-        developer being self taught. I really appreciate myself for coming this
-        far, and I appreciate my Dad for the advice that he gave me to go learn
-        computer, cause without that, i wouldn't have been like this at all. I
-        appreciate everyone who has been a part of this journey and that has
-        helped my in one way or the other, without your supports i might not be
-        here today.
+        With all that said, this was not a smooth journey. It was filled with
+        ups and downs and a whole lot of challenges.
       </p>
       <p>
-        Thanks for patiently reading this, i really you took out of your time to
-        read about my journey.
+        One of the main challenges I faced, and I think every newbie faces it,
+        was finding a community that guides you and lets you grow in tech. This
+        was a huge hurdle for me, because it seemed like apart from my friends,
+        no one else was doing what I was doing. In the end, we built our own
+        small community, which is how the WhatsApp group came about.
       </p>
+      <p>
+        Another challenge was electricity and internet access. This is a problem
+        most Nigerians face when going into tech. With unstable electricity and
+        poor, expensive internet service, it becomes really hard to learn and
+        explore.
+      </p>
+      {/* Add how you handled this one, for example offline learning, a power bank, downloading tutorials in advance. */}
+      <h1 className="text-4xl">What I would tell a beginner</h1>
+      <p>
+        Find at least one person who is learning alongside you. Promise and
+        David made the difference for me.
+      </p>
+      <p>
+        Teach what you learn, even when you feel you don't know enough yet.
+        Explaining something to others is one of the fastest ways to understand
+        it yourself.
+      </p>
+      <p>
+        Build projects instead of only watching tutorials, and don't be afraid
+        to change direction. I spent years on frontend and ended up loving
+        backend.
+      </p>
+      <h1 className="text-4xl">My overall view of my journey into tech</h1>
+      <p>
+        My journey was a special one with wonderful experiences. I went from not
+        knowing how to get started to becoming a self taught full stack
+        developer, and I'm proud of myself for coming this far. I'm grateful to
+        my dad for the advice to go and learn computers, because without it I
+        would not be where I am today. I also thank everyone who has been part
+        of this journey and helped me in one way or another. Without your
+        support, I might not be here.
+      </p>
+
+      <p>Thank you for taking the time to read about my journey.</p>
     </article>
   );
 }
